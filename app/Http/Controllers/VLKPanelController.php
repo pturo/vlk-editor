@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Service;
 
 class VLKPanelController extends Controller
 {
@@ -11,6 +12,7 @@ class VLKPanelController extends Controller
      */
     public function index()
     {
-        return view('vlkeditor.dashboard.index');
+        $services = Service::latest()->get();
+        return view('vlkeditor.dashboard.index', compact('services'));
     }
 }

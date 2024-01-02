@@ -16,14 +16,14 @@
     <div class="topbar">
         <a href="{{ route('services.index') }}">
             <div class="topbar-item">
-                <i class="bx bx-news"></i>
-                <h3>1</h3>
+                <i class="bx bx-package"></i>
+                <h3>{{ count($services) }}</h3>
                 <p>Usług</p>
             </div>
         </a>
         <a href="{{ route('testimonials.index') }}">
             <div class="topbar-item">
-                <i class="bx bx-news"></i>
+                <i class="bx bx-user"></i>
                 <h3>1</h3>
                 <p>Opinii</p>
             </div>

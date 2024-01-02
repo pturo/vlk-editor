@@ -322,7 +322,7 @@ hr {
     gap: 1rem;
 }
 
-.topbar a {
+.container .topbar a {
     max-width: 500px;
     width: 100%;
     height: max-content;
@@ -335,26 +335,26 @@ hr {
     transition: 0.3s;
 }
 
-.topbar a:hover {
+.container .topbar a:hover {
     color: var(--primary-color);
     background: var(--accent-color);
     transform: scale(1.05);
 }
 
-.topbar-item i {
+.container .topbar .topbar-item i {
     color: var(--white-color);
-    font-size: 30px;
+    font-size: 4rem;
 }
 
-.topbar-item h3 {
-    color: var(--white-color);
-}
-
-.topbar-item p {
+.container .topbar .topbar-item h3 {
     color: var(--white-color);
 }
 
-.recent-edited {
+.container .topbar .topbar-item p {
+    color: var(--white-color);
+}
+
+.container .recent-edited {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -370,7 +370,7 @@ hr {
     border-radius: 10px;
 }
 
-.list-of-edited-items .list-head {
+.container .recent-edited .list-of-edited-items .list-head {
     width: 100%;
     background: var(--primary-color);
     color: var(--white-color);
@@ -383,11 +383,11 @@ hr {
     border-top-right-radius: 10px;
 }
 
-.list-head h4 {
+.container .recent-edited .list-of-edited-items .list-head h4 {
     color: var(--white-color);
 }
 
-.list-of-edited-items .edited-item {
+.container .recent-edited .list-of-edited-items .edited-item {
     background: var(--white-color);
     display: flex;
     flex-direction: row;
@@ -398,21 +398,21 @@ hr {
     padding: 0.5rem 1rem;
 }
 
-.edited-item a {
+.container .recent-edited .edited-item a {
     color: var(--primary-color);
 }
 
-.edited-item a:hover {
+.container .recent-edited .edited-item a:hover {
     color: var(--accent-color);
 }
 
-.edited-item .actions {
+.container .recent-edited .edited-item .actions {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
 }
 
-.actions a {
+.container .recent-edited .edited-item .actions a {
     padding: 0.2rem 0.5rem;
     color: var(--white-color);
     background: var(--primary-color);
@@ -425,153 +425,64 @@ hr {
     gap: 0.5rem;
 }
 
-.actions a:hover {
+.container .recent-edited .edited-item .actions a:hover {
     background: var(--white-color);
     color: var(--primary-color);
 }
 
-/* SECTIONS */
-.list-of-sections {
+/* SERVICES */
+.list-of-services {
     width: 100%;
     height: max-content;
     display: flex;
     flex-direction: column;
 }
 
-.list-of-sections .section-head {
+.list-of-services .services-head {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
 }
 
-.section-head .s_filters {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-}
-
-.s_filters div {
-    background: var(--primary-color);
-    padding: 0.2rem 0.5rem;
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: 1px solid var(--primary-color);
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.s_filters div p {
-    color: var(--white-color);
-}
-
-.s_filters div:hover {
-    background: var(--accent-color);
-    cursor: pointer;
-}
-
-.section-head .s_actions {
+.list-of-services .services-head .s_actions {
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
 
-.list-of-sections .section-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 1rem;
-    margin-bottom: 10px;
+.list-of-services hr {
+    margin-bottom: 1rem;
 }
 
-.grid-view {
-    width: 100%;
+.list-of-services .services-body-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    margin-bottom: 1rem;
-    animation: zoom 0.3s;
 }
 
-.grid-view .grid-item {
+.list-of-services .services-body-grid .service-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    border: 1px solid var(--primary-color);
-    background: var(--primary-color);
-    transition: 0.3s;
-}
-
-.grid-item .g-head {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.grid-item .g-actions {
-    display: inline-flex;
-    gap: 10px;
-}
-
-.grid-item:hover {
+    padding: 1rem 2rem;
     background: var(--accent-color);
-    transform: scale(1.05);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    text-align: center;
 }
 
-.grid-item i {
-    font-size: 2rem;
-    color: var(--white-color);
-}
-
-.grid-item h3 {
-    color: var(--white-color);
-}
-
-.grid-item p {
-    color: var(--white-color);
-}
-
-.list-view {
+.list-of-services .services-body-grid .service-item img {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    background: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    animation: zoom 0.3s;
+    height: 100%;
 }
 
-.list-view .list-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    border: 1px solid var(--primary-color);
-    background: var(--white-color);
-    transition: 0.3s;
-}
-
-.list-item .l-head, .l-actions {
+.list-of-services .services-body-grid .service-item .actions {
     display: inline-flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.list-item:hover {
-    background: var(--accent-color);
+    gap: 1rem;
 }
 
 /* ADD SECTION */
@@ -586,7 +497,7 @@ hr {
 /* FORM WRAPPER */
 .form-wrapper {
     margin-top: 10px;
-    max-width: 550px;
+    max-width: 700px;
     width: 100%;
     border: 1px solid var(--primary-color);
     border-radius: 10px;
@@ -603,35 +514,36 @@ hr {
     font-size: 13px;
 }
 
-form {
+.form-wrapper form {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.form-wrapper form .form-control,
-.form-wrapper form .section-content .s_form-control {
+.form-wrapper form .form-control {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-.section-content {
+.form-wrapper form .form-control-editor {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    width: 100%;
 }
 
-form .button-control {
+.form-wrapper form .button-control {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin-bottom: 10px;
 }
 
-.form-control input[type="file"] {
-    max-width: 197px;
+.form-wrapper form .form-control input,
+.form-wrapper form .form-control textarea,
+.form-wrapper form .form-control input[type="file"] {
+    max-width: 250px;
     width: 100%;
 }
 
@@ -679,55 +591,46 @@ form .button-control {
 
 /* LINK BUTTON */
 .link-button {
-    padding: 0.2rem 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: var(--primary-color);
     color: var(--white-color);
-    background: var(--primary-color);
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--white-color);
     border-radius: 10px;
-    transition: 0.3s;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .link-button:hover {
-    background: var(--white-color);
+    background-color: var(--white-color);
     color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 1380px) {
-    .grid-view {
+@media screen and (max-width: 1700px) {
+    .list-of-services .services-body-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media screen and (max-width: 1120px) {
-    .grid-view {
+@media screen and (max-width: 1250px) {
+    .list-of-services .services-body-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .list-view .list-item {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .list-item .l-head {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 850px) {
-    .grid-view {
+@media screen and (max-width: 950px) {
+    .list-of-services .services-body-grid {
         grid-template-columns: 1fr;
     }
 }
 
 @media screen and (max-width: 725px) {
-    .list-of-sections .section-head {
+    .list-of-services .services-head {
         flex-direction: column;
         gap: 1rem;
     }
