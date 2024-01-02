@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Testimonial extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'client_avatar',
+        'name',
+        'occupation',
+        'review',
+        'rating'
+    ];
 }

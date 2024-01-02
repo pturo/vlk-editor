@@ -12,13 +12,13 @@
         </li>
         <li class="link">
             <a href="{{ route('services.index') }}">
-                <i class='bx bx-news'></i>
+                <i class='bx bx-package'></i>
                 <span class="link_name">Usługi</span>
             </a>
         </li>
         <li class="link">
             <a href="{{ route('testimonials.index') }}">
-                <i class='bx bx-news'></i>
+                <i class='bx bx-user'></i>
                 <span class="link_name">Opinie klientów</span>
             </a>
         </li>
@@ -37,7 +37,7 @@
     </ul>
     <div class="profile-details">
         <div class="profile-content">
-            <img src="{{ URL::asset(Auth::user()->profile_avatar) }}" alt="profileImg">
+            <img src="{{ asset('images/profile-avatar') }}/{{ Auth::user()->profile_avatar }}" alt="profileImg">
         </div>
         <div class="name-job">
             <div class="profile_name">{{ Auth::user()->name }}</div>
