@@ -33,7 +33,7 @@
                     @enderror
                     <div class="form-control">
                         <label for="occupation"><i class="bx bx-pen"></i> Profesja/Stanowisko</label>
-                        <input id="occupation" type="text" name="name" value="{{ old('occupation', '') }}">
+                        <input id="occupation" type="text" name="occupation" value="{{ old('occupation', '') }}">
                     </div>
                     @error('occupation')
                         <div class="msg-feedback-fail" role="alert">{{ $message }}</div>

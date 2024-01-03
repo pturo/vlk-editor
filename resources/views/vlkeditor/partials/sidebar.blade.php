@@ -4,7 +4,7 @@
         <i class='bx bx-menu'></i>
     </div>
     <ul class="nav-links">
-        <li class="link active">
+        <li class="link">
             <a href="{{ route('vlkadm_dashboard.index') }}">
                 <i class='bx bx-grid-alt'></i>
                 <span class="link_name">Kokpit</span>

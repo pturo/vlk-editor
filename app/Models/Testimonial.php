@@ -13,7 +13,6 @@ class Testimonial extends Model
         'client_avatar',
         'name',
         'occupation',
-        'review',
-        'rating'
+        'review'
     ];
 }

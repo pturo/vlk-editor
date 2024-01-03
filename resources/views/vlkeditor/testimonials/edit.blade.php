@@ -16,6 +16,7 @@
             @endif
             <div class="form-wrapper">
                 <form action="{{ route('testimonials.update', [$testimonial->id]) }}" method="POST" enctype="multipart/form-data">
+                    {{ method_field('PATCH') }}
                     @csrf
                     <div class="form-control">
                         <label for="client_avatar"><i class="bx bx-image"></i> Zdjęcie klienta</label>
@@ -33,7 +34,7 @@
                     @enderror
                     <div class="form-control">
                         <label for="occupation"><i class="bx bx-pen"></i> Profesja/Stanowisko</label>
-                        <input id="occupation" type="text" name="name" value="{{ $testimonial->occupation }}">
+                        <input id="occupation" type="text" name="occupation" value="{{ $testimonial->occupation }}">
                     </div>
                     @error('occupation')
                         <div class="msg-feedback-fail" role="alert">{{ $message }}</div>
@@ -46,7 +47,7 @@
                         <div class="msg-feedback-fail" role="alert">{{ $message }}</div>
                     @enderror
                     <div class="button-control">
-                        <button type="submit">Stwórz opinię</button>
+                        <button type="submit">Aktualizuj opinię</button>
                     </div>
                 </form>
                 <div class="button-control">

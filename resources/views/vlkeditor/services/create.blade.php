@@ -40,7 +40,7 @@
                     @enderror
                     <div class="form-control-editor">
                         <label for="content"><i class="bx bx-pen"></i> Treść usługi</label>
-                        <textarea name="content" id="content" cols="30" rows="10"></textarea>
+                        <textarea name="content" id="content" cols="30" rows="10" value="{{ old('content', '') }}"></textarea>
                     </div>
                     @error('content')
                         <div class="button-control">
