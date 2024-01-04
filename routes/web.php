@@ -38,6 +38,8 @@ Route::group(['prefix'=>'admin'], function() {
     Route::resource('/testimonials', 'VLKTestimonialsController')->middleware('auth', 'verified');
     // VLK Editor Blog posts
     Route::resource('/blog', 'VLKBlogController')->middleware('auth', 'verified');
+    // VLK WebDemo
+    Route::get('/webdemo', 'VLKWebDemoController@index')->middleware('auth', 'verified')->name('vlkadm_webdemo.index');
 });
 
 Auth::routes();

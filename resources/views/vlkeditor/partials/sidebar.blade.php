@@ -29,6 +29,12 @@
             </a>
         </li>
         <li class="link">
+            <a href="{{ route('vlkadm_webdemo.index') }}">
+                <i class='bx bx-world'></i>
+                <span class="link_name">WebDemo</span>
+            </a>
+        </li>
+        <li class="link">
             <a href="#">
                 <i class='bx bx-cog'></i>
                 <span class="link_name">Ustawienia</span>
