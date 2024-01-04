@@ -17,21 +17,21 @@
         <a href="{{ route('services.index') }}">
             <div class="topbar-item">
                 <i class="bx bx-package"></i>
-                <h3>{{ count($services) }}</h3>
+                <h3>{{ count($services) > 0 ? count($services) : 0 }}</h3>
                 <p>Usług</p>
             </div>
         </a>
         <a href="{{ route('testimonials.index') }}">
             <div class="topbar-item">
                 <i class="bx bx-user"></i>
-                <h3>1</h3>
+                <h3>{{ count($testimonials) > 0 ? count($testimonials) : 0 }}</h3>
                 <p>Opinii</p>
             </div>
         </a>
         <a href="{{ route('blog.index') }}">
             <div class="topbar-item">
                 <i class="bx bx-news"></i>
-                <h3>1</h3>
+                <h3>{{ count($blog) > 0 ? count($testimonials) : 0 }}</h3>
                 <p>Postów na bloga</p>
             </div>
         </a>

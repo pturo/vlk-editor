@@ -52,7 +52,7 @@ section {
     padding: 5rem 9%;
 }
 
-input, textarea {
+input, textarea, select {
     border: 1px solid var(--primary-color);
     padding: 0.5rem 1rem;
     border-radius: 10px;
@@ -538,6 +538,7 @@ hr {
 
 .form-wrapper form .form-control input,
 .form-wrapper form .form-control textarea,
+.form-wrapper form .form-control select,
 .form-wrapper form .form-control input[type="file"] {
     max-width: 250px;
     width: 100%;

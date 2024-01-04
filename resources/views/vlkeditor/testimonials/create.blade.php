@@ -40,7 +40,7 @@
                     @enderror
                     <div class="form-control">
                         <label for="review"><i class="bx bx-pen"></i> Treść opinii</label>
-                        <textarea name="review" id="review" cols="30" rows="10" value="{{ old('review', '') }}"></textarea>
+                        <textarea name="review" id="review" cols="30" rows="10">{{ old('review', '') }}</textarea>
                     </div>
                     @error('review')
                         <div class="msg-feedback-fail" role="alert">{{ $message }}</div>

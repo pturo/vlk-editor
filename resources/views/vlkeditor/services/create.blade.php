@@ -33,14 +33,14 @@
                     @enderror
                     <div class="form-control">
                         <label for="excerpt"><i class="bx bx-pen"></i> Krótki opis usługi</label>
-                        <textarea name="excerpt" id="excerpt" cols="30" rows="10" value="{{ old('excerpt', '') }}"></textarea>
+                        <textarea name="excerpt" id="excerpt" cols="30" rows="10">{{ old('excerpt', '') }}</textarea>
                     </div>
                     @error('excerpt')
                         <div class="msg-feedback-fail" role="alert">{{ $message }}</div>
                     @enderror
                     <div class="form-control-editor">
                         <label for="content"><i class="bx bx-pen"></i> Treść usługi</label>
-                        <textarea name="content" id="content" cols="30" rows="10" value="{{ old('content', '') }}"></textarea>
+                        <textarea name="content" id="content" cols="30" rows="10">{{ old('content', '') }}</textarea>
                     </div>
                     @error('content')
                         <div class="button-control">
