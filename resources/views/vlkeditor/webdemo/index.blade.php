@@ -50,10 +50,47 @@
             <div class="srvc-grid">
                 @foreach ($services as $service)
                     <div class="srvc-item">
-                        <img src="{{ asset('services/thumbnails') }}/{{ $service->thumbnail }}" alt="">
+                        <div class="img">
+                            <img src="{{ asset('services/thumbnails') }}/{{ $service->thumbnail }}" alt="">
+                        </div>
                         <h1>{{ $service->name }}</h1>
                         <p>{{ $service->excerpt }}</p>
                         <a href="#" class="link-button">Więcej</a>
+                    </div>
+                @endforeach
+            </div>
+        </section>
+        <section class="testimonials" id="testimonials">
+            <h1>Opinie naszych wilczych fanów</h1>
+            <div class="testimonials-grid">
+                @foreach ($testimonials as $testimonial)
+                    <div class="testimonial-item">
+                        <div class="img">
+                            <img src="{{ asset('testimonials/client_avatar') }}/{{ $testimonial->client_avatar }}" alt="">
+                        </div>
+                        <h1>{{ $testimonial->name }}</h1>
+                        <h3>{{ $testimonial->occupation }}</h3>
+                        <p>{{ $testimonial->review }}</p>
+                    </div>
+                @endforeach
+            </div>
+        </section>
+        <section class="blog-posts" id="blog-posts">
+            <h1>Blog</h1>
+            <p>
+                Chcesz dowiedzieć się czegoś więcej odnośnie naszej pracy?
+                Zachęcamy do lektury!
+            </p>
+            <div class="blog-grid">
+                @foreach ($blog as $post)
+                    <div class="post-item">
+                        <div class="img">
+                            <img src="{{ asset('blog/thumbnails') }}/{{ $post->thumbnail }}" alt="">
+                        </div>
+                        <h1>{{ $post->title }}</h1>
+                        <h3>{{ $post->author }}</h3>
+                        <p>{{ $post->excerpt }}</p>
+                        <a href="#" class="link-button">Czytaj więcej</a>
                     </div>
                 @endforeach
             </div>
