@@ -95,5 +95,10 @@
                 @endforeach
             </div>
         </section>
+        <section class="web-footer" id="web-footer">
+            <h1>WebDemo</h1>
+            <h1>Stworzone przez: Paweł "WilczeqVlk" Turoń</h1>
+            <a href="#hero-intro" class="link-button"><i class="bx bx-up-arrow-alt"></i></a>
+        </section>
     </div>
 @endsection

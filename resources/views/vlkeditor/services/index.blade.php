@@ -19,7 +19,9 @@
             <div class="services-body-grid">
                 @forelse ($services as $service)
                     <div class="service-item">
-                        <img src="{{ asset('services/thumbnails') }}/{{ $service->thumbnail }}" alt="">
+                        <div class="img">
+                            <img src="{{ asset('services/thumbnails') }}/{{ $service->thumbnail }}" alt="">
+                        </div>
                         <h1>{{ $service->name }}</h1>
                         <p>{{ $service->excerpt }}</p>
                         <div class="actions">

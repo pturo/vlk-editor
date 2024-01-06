@@ -19,7 +19,9 @@
         <div class="services-body-grid">
             @forelse ($testimonials as $testimonial)
                 <div class="service-item">
-                    <img src="{{ asset('testimonials/client_avatar') }}/{{ $testimonial->client_avatar }}" alt="">
+                    <div class="img">
+                        <img src="{{ asset('testimonials/client_avatar') }}/{{ $testimonial->client_avatar }}" alt="">
+                    </div>
                     <h1>{{ $testimonial->name }}</h1>
                     <h4>{{ $testimonial->occupation }}</h4>
                     <p>{{ $testimonial->review }}</p>

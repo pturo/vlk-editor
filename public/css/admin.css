@@ -471,7 +471,12 @@ hr {
     text-align: center;
 }
 
-.list-of-services .services-body-grid .service-item img {
+.list-of-services .services-body-grid .service-item .img {
+    width: 100%;
+    height: 200px;
+}
+
+.list-of-services .services-body-grid .service-item .img img {
     width: 100%;
     height: 100%;
 }
@@ -805,6 +810,21 @@ hr {
 .blog-posts .blog-grid .post-item .img img {
     width: 100%;
     height: 100%;
+}
+
+.web-footer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.web-footer h1 {
+    color: var(--accent-color);
+}
+
+.web-footer a i {
+    font-size: 2rem;
 }
 
 /* MEDIA QUERIES */
