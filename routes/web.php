@@ -42,8 +42,6 @@ Route::group(['prefix'=>'admin'], function() {
     Route::get('/webdemo', 'VLKWebDemoController@index')->middleware('auth', 'verified')->name('vlkadm_webdemo.index');
 });
 
-Auth::routes();
-
 // Clearing route if you run into problems
 Route::get('/clear-cache', function() {
     $exitCode = Artisan::call('config:clear');
