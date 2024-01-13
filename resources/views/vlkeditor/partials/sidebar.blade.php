@@ -34,12 +34,6 @@
                 <span class="link_name">WebDemo</span>
             </a>
         </li>
-        <li class="link">
-            <a href="#">
-                <i class='bx bx-cog'></i>
-                <span class="link_name">Ustawienia</span>
-            </a>
-        </li>
     </ul>
     <div class="profile-details">
         <div class="profile-content">

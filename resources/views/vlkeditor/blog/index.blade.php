@@ -5,8 +5,8 @@
         <h1>Blog</h1>
     </div>
     <p>
-        Tutaj znajdują się utworzone usługi, którymi można zarządzać, poprzez
-        edycję lub ich usunięcie. Jeśli lista usług jest pusta, warto dodać chodziaż
+        Tutaj znajdują się utworzone wpisy na bloga, którymi można zarządzać, poprzez
+        edycję lub ich usunięcie. Jeśli lista wpisów jest pusta, warto dodać chodziaż
         jedną.
     </p>
     <div class="list-of-services">
